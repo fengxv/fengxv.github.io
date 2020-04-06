@@ -1,38 +1,124 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Hi, Jon Here. Please DELETE the two <script> tags below if you use this HTML, otherwise my analytics will track your page -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7580334-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-7580334-2');
+    </script>
+
+    <title>Feng Xu</title>
+
+    <meta name="author" content="Feng Xu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      {% if site.title and site.title != page.title %}
-      <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
-      {% endif %}
+</head>
 
-      {{ content }}
+<body>
+<table style="width:100%;max-width:860px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+    <tr style="padding:0px">
+        <td style="padding:0px">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr style="padding:0px">
+                    <td style="padding:2.5%;padding-bottom:0px;width:25%;max-width:40%">
+                        <img style="width:80%;max-width:80%" alt="profile photo" src="images/photo.jpg" class="hoverZoomLink">
+                    </td>
+                    <td style="padding:2.5%;padding-bottom:0px;width:63%;vertical-align:middle">
+                        <p style="text-align:center;font-size:30px">
+                            Feng Xu(许峰)
+                        </p>
+                        <p style="text-align:center">
+                            Email: fx2155[at]columbia[dot]edu
+                        </p>
+                        <p style="font-family:Calibri">I earned the Master of Science degree in Mechanical Engineering in 2020 from <a href="https://www.columbia.edu/">Columbia University</a>. I was a Research Assistant at the <a href="http://www1.cs.columbia.edu/robotics/">Columbia
+                                Robotics Lab</a> advised by <a href="https://www.cs.columbia.edu/~allen/">Prof. Peter K. Allen</a>. My research focuses on robotics.
+                        </p>
+                        <p style="font-family:Calibri">I received a Bachelor of Engineering degree in Vehicle Engineering from Jilin University in 2018.</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
 
-      {% if site.github.private != true and site.github.license %}
-      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-        This site is open source. {% github_edit_link "Improve this page" %}.
-      </div>
-      {% endif %}
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-    {% if site.google_analytics %}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
-    </script>
-    {% endif %}
-  </body>
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding-left:20px;width:100%;vertical-align:middle;font-size:25px;font-family:Calibri">
+                        <strong>Research</strong>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <div class="two" id='unprocessing_image2'><img src='images/few_shot_irl.gif' width="160px" height="100px"></div>
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle;font-family:Calibri">
+                        <strong>SQUIRL: Robust and Efficient Learning from Video Demonstration of Long-Horizon Robotic Manipulation Tasks</strong>
+                        <br>
+                        <a href="https://bohanwu.github.io/">Bohan Wu</a>, <strong>Feng Xu</strong>, <a href="https://zhanpenghe.github.io/">Zhanpeng He</a>, Abhi Gupta, <a href="https://www.cs.columbia.edu/~allen/">Peter K. Allen</a>
+                        <br>
+                        <em>Under Review</em>
+                        <br>
+                        <a href="http://crlab.cs.columbia.edu/squirl/">website</a> /
+                        <a href="https://youtu.be/y6Hd_tGWyn0">video</a>
+                        <p></p>
+                        <p>This paper aims to address the commonly-known IRL sample efficiency challenge with a robust, sample-efficient, and general meta-IRL algorithm, SQUIRL, that performs a new but related long-horizon task robustly given only a single video demonstration.
+                        </p>
+                    </td>
+                </tr>
+                <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <div class="two" id='unprocessing_image1'><img src='images/general.gif' width="160px" height="100px"></div>
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle;font-family:Calibri">
+                        <a href="https://link.springer.com/article/10.1007/s10514-020-09907-y">
+                            <strong>Generative Attention Learning: A "GenerAL" Framework for High-Performance Multi-Fingered Grasping in Clutter</strong>
+                        </a>
+                        <br>
+                        <a href="https://bohanwu.github.io/">Bohan Wu</a>,
+                        <a href="http://www.cs.columbia.edu/~iakinola/">Iretiayo Akinola</a>, Abhi Gupta, <strong>Feng Xu</strong>,
+                        <a href="http://www.cs.columbia.edu/~jvarley/">Jacob Varley</a>, David Watkins-Valls,
+                        <a href="https://www.cs.columbia.edu/~allen/">Peter K. Allen</a>
+                        <br>
+                        <em>Journal of Autonomous Robots (AURO)</em>, 2020
+                        <br>
+                        <a href="https://link.springer.com/article/10.1007/s10514-020-09907-y">paper</a> /
+                        <a href="http://crlab.cs.columbia.edu/GenerAL/">website</a> /
+                        <a href="https://youtu.be/GROLYFve9Cc">video</a>
+                        <p></p>
+                        <p>This paper proposes a fully general deep reinforcement learning framework for high-DOF grasping that is not only high performance in dense clutter and novel objects but also effective with robotic hands with
+                            arbitrary degrees of freedom.</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <p align="right"><a href="https://jonbarron.info/">Original template by Jon Barron</a></p>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+
 </html>
